@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<title> Latihan-4 </title>
+
+<style>
+
+td, th {
+	font-size: 15px;
+	padding: 10px;
+}
+h1 {
+	text-align: center;
+	font-family: cursive;
+}
+h2 {
+	padding: 10px 24px;
+	background-color: darkblue;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.bg {
+	background-color: rgba(298, 395, 955, 0.3);
+	width:  1000px;
+	color:  black;
+	margin:  20px auto;
+	padding:  15px;
+}
+.tombol {
+	padding: 10px 24px;
+	background-color: darkblue;
+	font-size: 15px;
+	border-color: grey;
+	color: white;
+	float: right;
+	margin: 5px;
+}
+
+</style>
+</head>
+
+<body style="background-color:#8967">
+<div class="bg">
+	<input type="button" id="cek_me" name="cek_me" onclick="alert('&#128075; &#128075; Hai Perkenalkan Nama Saya Muhammad Jamil &#128516; &#128512;')" value="Click Me!">
+<h1>Formulir PPDB Jalur Zonasi Tahun 2021</h1>
+
+<form action="php-4.php" method="Post" name="fcontoh">
+
+
+					<!--     From Info Pendaftaran     -->
+
+	<h2>Info Pendaftaran</h2>
+	<table>
+		<tr>
+			<td> NISN  : <br><br>
+				<input type="number" placeholder="Masukkan Nomor NISN" id="NISN" name="NISN">
+			</td>
+			<td>Tahun Lulus : <br><br>
+				<input type="number" placeholder="Masukkan Tahun Lulus" id="Tahun" name="Tahun">
+			</td>
+		</tr>
+		<tr>
+			<td> Asal Sekolah :<br><br>
+				<input size="60" type="text" placeholder="Masukkan Asal Sekolah" id="Asal_Sekolah" name="Asal_Sekolah">
+			<td>Rata-rata Nilai Raport Kelas 12 : <br><br>
+				<input size="30" type="text" placeholder="Masukkan Rata-rata Nilai Raport" id="rata_raport" name="rata_raport">
+			</td>
+		</tr>
+	</table>
+
+	<h2>Data Alamat Asal</h2>
+	<table>
+		<tr>
+			<td colspan="2"> Nama lengkap :<br><br>
+				<input type="text" placeholder="Masukkan Nama Anda" id="nama" name="nama" required>
+			</td>
+			<td >Nomor Identitas (NIK) :<br><br>
+				<input type="number" placeholder="Masukkan Nomor NIK" id="nik" name="nik">
+			</td>
+
+		</tr>
+		<tr>
+			<td> Tempat Lahir :<br><br>
+				<input size="55" type="text" placeholder="Masukkan Tempat Lahir" id="tpt_L" name="tpt_L">
+			</td>
+			<td> Tanggal Lahir :<br><br>
+				<input type="date" id="birthday" name="birthday">
+			</td>
+		</tr>
+
+	</table>
+
+	<table>
+
+		<tr>
+			<td colspan="3"> Usia : <br><br>
+				<input type="number" placeholder="Masukkan Usia" id="usia" name="usia">
+				Tahun
+			</td>
+
+			<td> Nomor HP : <br><br>
+				<input type="tel" id="phone" name="phone" placeholder="Masukkan No HP" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br><br>
+  				Contoh Format: <sub>821-5494-8742</sub><br><br>
+  		</td>
+  	</tr>
+  	<tr>
+  		<td> Jenis Kelamin :<br><br>
+				<input type="radio" id="jenis_K-L" name="jk" value="Laki-laki">Laki-laki
+				<input type="radio" id="jenis_K-P" name="jk" value="Perempuan">Perempuan
+			</td>
+  		<td> E-mail : <br><br>
+  			<input type="email" placeholder="Masukkan E-mail" id="email" nama="email">
+  		</td>
+			<td>Agama :<br><br>
+				<select id="Agama" name="Agama">
+					<option>Islam</option>
+					<option>Kristen</option>
+					<option>Hindu</option>
+					<option>Buddha</option>
+					<option>katolik</option>
+					<option>khonghucu</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td> Desa/Kelurahan : <br><br>
+				<input type="text" placeholder="Masukkan Desa/Kelurahan" id="desa" name="desa">
+			</td>
+			<td> Kecamatan : <br><br>
+				<input type="text" placeholder="Masukkan Kecamanan" id="kec" name="kec">
+			</td>
+			<td> Kabupaten : <br><br>
+				<input type="text" placeholder="Masukkan Kabupaten" id="kab" name="kab">
+			</td>
+			<td>Provinsi : <br><br>
+				<select id="prov" name="prov">	
+					<option>Nanggroe Aceh Darussalam</option>
+					<option>Sumatera Utara</option>
+					<option>Sumatera Barat</option>
+					<option>Riau</option>
+					<option>Kepulauan Riau</option>
+					<option>Jambi</option>
+					<option>Bengkulu</option>
+					<option>Sumatera Selatan</option>
+					<option>Kepulauan Bangka Belitung</option>
+					<option>Lampung</option>
+					<option>Banten</option>
+					<option>Jawa Barat</option>
+					<option>DKI Jakarta</option>
+					<option>Jawa Tengah</option>
+					<option>DI Yogyakarta</option>
+					<option>Jawa Timur</option>
+					<option>Bali</option>
+					<option>Nusa Tenggara Barat</option>
+					<option>Nusa Tenggara Timur</option>
+					<option>Kalimantan Utara</option>
+					<option>Kalimantan Barat</option>
+					<option>Kalimantan Tengah</option>
+					<option>Kalimantan Selatan</option>
+					<option>Kalimantan Timur</option>
+					<option>Gorontalo</option>
+					<option>Sulawesi Utara</option>
+					<option>Sulawesi Barat</option>
+					<option>Sulawesi Tengah</option>
+					<option>Sulawesi Selatan</option>
+					<option>Sulawesi Tenggara</option>
+					<option>Maluku Utara</option>
+					<option>Maluku</option>
+					<option>Papua Barat</option>
+					<option>Papua</option>
+				</select>
+			</td>
+			
+		</tr>
+	</table>
+
+					<!--    Data Orang Tua    -->
+
+	<h2>Data Orang Tua</h2>
+	<table>
+		<tr>
+			<td colspan="2">Nama Ayah Kandung :<br><br>
+				<input type="text" placeholder="Masukkan Nama Ayah Kandung" id="nama_Ayah" name="nama_Ayah">
+			</td>
+			<td >Nomor Kartu Keluarga (NKK) :<br><br>
+				<input type="number" placeholder="Masukkan NKK" id="nkk" name="nkk">
+			</td>
+		</tr>	
+		<tr>
+			<td> Pekerjaan Ayah: <br><br>
+				<select id="pekerjaan_Ortu" name="Pekerjaan_Ortu">
+					<option>PNS</option>
+					<option>Pedagang</option>
+					<option>Petani</option>
+					<option>Nelayan</option>
+					<option>Guru/Dosen</option>
+					<option>Polisi/TNI</option>
+					<option>Buruh</option>
+					<option>Pegawai Swasta</option>
+					<option>Wiraswasta</option>
+					<option>Lain-lain</option>
+				</select>
+			</td>
+			
+			<td></td>
+
+			<td colspan="2">Agama :<br><br>
+				<select id="Agama" name="Agama">
+					<option>Islam</option>
+					<option>Kristen</option>
+					<option>Hindu</option>
+					<option>Buddha</option>
+					<option>katolik</option>
+					<option>khonghucu</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">Nama Ibu Kandung :<br><br>
+				<input type="text" placeholder="Masukkan Nama Ibu Kandung" id="nama_Ibu" name="nama_Ibu">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"> Pekerjaan Ibu: <br><br>
+				<select id="pekerjaan_Ortu" name="Pekerjaan_Ortu">
+					<option>PNS</option>
+					<option>Pedagang</option>
+					<option>Petani</option>
+					<option>Nelayan</option>
+					<option>Guru/Dosen</option>
+					<option>Polisi/TNI</option>
+					<option>Buruh</option>
+					<option>Pegawai Swasta</option>
+					<option>Wiraswasta</option>
+					<option>Lain-lain</option>
+				</select>
+			</td>
+			<td>Alamat Lengkap :<br><br>
+				<textarea id="alamat" name="alamat" cols="65" rows="6"></textarea>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Provinsi : <br><br>
+				<select id="prov" name="prov">	
+					<option>Nanggroe Aceh Darussalam</option>
+					<option>Sumatera Utara</option>
+					<option>Sumatera Barat</option>
+					<option>Riau</option>
+					<option>Kepulauan Riau</option>
+					<option>Jambi</option>
+					<option>Bengkulu</option>
+					<option>Sumatera Selatan</option>
+					<option>Kepulauan Bangka Belitung</option>
+					<option>Lampung</option>
+					<option>Banten</option>
+					<option>Jawa Barat</option>
+					<option>DKI Jakarta</option>
+					<option>Jawa Tengah</option>
+					<option>DI Yogyakarta</option>
+					<option>Jawa Timur</option>
+					<option>Bali</option>
+					<option>Nusa Tenggara Barat</option>
+					<option>Nusa Tenggara Timur</option>
+					<option>Kalimantan Utara</option>
+					<option>Kalimantan Barat</option>
+					<option>Kalimantan Tengah</option>
+					<option>Kalimantan Selatan</option>
+					<option>Kalimantan Timur</option>
+					<option>Gorontalo</option>
+					<option>Sulawesi Utara</option>
+					<option>Sulawesi Barat</option>
+					<option>Sulawesi Tengah</option>
+					<option>Sulawesi Selatan</option>
+					<option>Sulawesi Tenggara</option>
+					<option>Maluku Utara</option>
+					<option>Maluku</option>
+					<option>Papua Barat</option>
+					<option>Papua</option>
+				</select>
+			</td>
+
+			<td>Kabupaten : <br><br>
+				<input type="text" placeholder="Masukkan Nama Kabupaten" id="kab" name="kab">
+			</td>
+			<td>Kecamatan : <br><br>
+				<input type="text" placeholder="Masukkan Nama Kecamatan" id="kec" name="kec">
+			</td>
+		</tr>
+	</table>
+
+
+					<!--     Data Pilihan Jurusan     -->
+
+	<h2>Pilihan Program Studi</h2>
+	<table>
+		<tr>
+			<td>Pilih Jurusan 1 : <br><br>
+				<select id="Pil_Jurusan-1" name="Pil_Jurusan-1">
+					<option>SMA-IPA</option>
+					<option>SMA-IPS</option>
+				</select>
+			</td>
+			<td></td>
+			<td colspan="2">Pilih Jurusan 2 : <br><br>
+				<select id="Pil_Jurusan-2" name="Pil_Jurusan-2">
+					<option>SMA-IPA</option>
+					<option>SMA-IPS</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+				<br>
+	      	Waktu Penginputan Pada Jam :
+	      	<input type="time" id="time" name="time">
+	
+	      	
+	      	<input class="tombol" type="button" value="kembali" id="kembali" name="kembali">
+	        <input class="tombol" type="reset" value="Reset" id="reset" name="reset">
+	        <input class="tombol" type="submit" value="Simpan" id="submit" name="submit">
+</form>
+</div>
+</body>
+</html>
+
+	

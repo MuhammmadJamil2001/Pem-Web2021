@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<title> Form MABA </title>
+
+<style>
+
+td, th {
+	font-size: 15px;
+	padding: 10px;
+}
+h1 {
+	text-align: center;
+	font-family: cursive;
+}
+h2 {
+	padding: 10px 24px;
+	background-color: maroon;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.bg {
+	background-color: rgba(255, 255, 255, 0.3);
+	width:  1000px;
+	color:  black;
+	margin:  20px auto;
+	padding:  15px;
+}
+.tombol {
+	padding: 10px 24px;
+	background-color: maroon;
+	font-size: 15px;
+	border-color: grey;
+	color: white;
+	float: right;
+	margin: 5px;
+}
+
+</style>
+</head>
+
+<body style="background-color:#8967">
+<div class="bg">
+	<input type="button" id="cek_me" name="cek_me" onclick="alert('&#128075; &#128075; Hai Perkenalkan Nama Saya Muhammad Jamil &#128516; &#128512;')" value="Click Me!">
+
+<h1>Form Pendaftaran Mahasiswa Baru</h1>
+
+<form action="php-4.php" method="Post" name="fcontoh">
+
+
+					<!--     From Data Diri     -->
+
+	<h2>Data Diri</h2>
+	<table>
+		<tr>
+			<td colspan="2"> Nama lengkap :<br><br>
+				<input size="80" type="text" placeholder="Masukkan Nama Anda" id="nama" name="nama" required>
+			</td>
+			<td >Nomor Identitas (NIK) :<br><br>
+				<input type="number" placeholder="Masukkan Nomor NIK" id="nik" name="nik">
+			</td>
+
+		</tr>
+		<tr>
+			<td> Tempat Lahir :<br><br>
+				<input size="56" type="text" placeholder="Masukkan Tempat Lahir" id="tpt_L" name="tpt_L">
+			</td>
+			<td> Tanggal Lahir :<br><br>
+				<input type="date" id="birthday" name="birthday">
+			</td>
+			<td> Jenis Kelamin :<br><br>
+				<input type="radio" id="jenis_K-L" name="jk" value="Laki-laki">Laki-laki
+				<input type="radio" id="jenis_K-P" name="jk" value="Perempuan">Perempuan
+			</td>
+		</tr>
+		<tr>
+			<td> Nomor HP : <br><br>
+				<input type="tel" id="phone" name="phone" placeholder="Masukkan No HP" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br><br>
+  				Contoh Format: <sub>821-5494-8742</sub><br><br>
+  		</td>
+			<td>Agama :<br><br>
+				<select id="Agama" name="Agama">
+					<option>Islam</option>
+					<option>Kristen</option>
+					<option>Hindu</option>
+					<option>Buddha</option>
+					<option>katolik</option>
+					<option>khonghucu</option>
+				</select>
+			</td>
+			<td>Nama Ibu Kandung :<br><br>
+				<input size="36" type="text" placeholder="Masukkan Nama Ibu Kandung" id="nama_IBU" name="nama_IBU">
+			</td>
+		</tr>
+		
+	</table>
+
+
+					<!--    Data Alamat Asal    -->
+
+	<h2>Data Alamat Asal</h2>
+	<table>
+		<tr>
+			<td>Alamat Lengkap :<br><br>
+			<textarea id="alamat" name="alamat" cols="65" rows="6"></textarea></td>
+			<td> Kode POS : <br><br>
+				<input type="number" placeholder="Masukkan Kode POS" id="pos" name="pos">
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Provinsi : <br><br>
+				<select id="prov" name="prov">	
+					<option>Nanggroe Aceh Darussalam</option>
+					<option>Sumatera Utara</option>
+					<option>Sumatera Barat</option>
+					<option>Riau</option>
+					<option>Kepulauan Riau</option>
+					<option>Jambi</option>
+					<option>Bengkulu</option>
+					<option>Sumatera Selatan</option>
+					<option>Kepulauan Bangka Belitung</option>
+					<option>Lampung</option>
+					<option>Banten</option>
+					<option>Jawa Barat</option>
+					<option>DKI Jakarta</option>
+					<option>Jawa Tengah</option>
+					<option>DI Yogyakarta</option>
+					<option>Jawa Timur</option>
+					<option>Bali</option>
+					<option>Nusa Tenggara Barat</option>
+					<option>Nusa Tenggara Timur</option>
+					<option>Kalimantan Utara</option>
+					<option>Kalimantan Barat</option>
+					<option>Kalimantan Tengah</option>
+					<option>Kalimantan Selatan</option>
+					<option>Kalimantan Timur</option>
+					<option>Gorontalo</option>
+					<option>Sulawesi Utara</option>
+					<option>Sulawesi Barat</option>
+					<option>Sulawesi Tengah</option>
+					<option>Sulawesi Selatan</option>
+					<option>Sulawesi Tenggara</option>
+					<option>Maluku Utara</option>
+					<option>Maluku</option>
+					<option>Papua Barat</option>
+					<option>Papua</option>
+				</select>
+			</td>
+
+			<td>Kabupaten : <br><br>
+				<input type="text" placeholder="Masukkan Nama Kabupaten" id="kab" name="kab">
+			</td>
+			<td>Kecamatan : <br><br>
+				<input type="text" placeholder="Masukkan Nama Kecamatan" id="kec" name="kec">
+			</td>
+		</tr>
+	</table>
+
+
+					<!--     Data Pendidikan     -->
+
+	<h2>Data Pendidikan</h2>
+	<table>
+		<tr>
+			<td>Pendidikan Terakhir :<br><br>
+				<select id="Pendidikan_Terakhir" name="Pendidikan_Terakhir">
+					<option>SMA-IPA</option>
+					<option>SMA-IPS</option>
+					<option>SMK</option>
+					<option>MA</option>
+					<option>SMP</option>
+					<option>MTS</option>
+				</select>
+			</td>
+			<td>Nama Sekolah : <br><br>
+				<input size="50" type="text" placeholder="Masukkan Nama Sekolah" id="Nama_Sekolah" name="Nama_Sekolah">
+			</td>
+			<td>Rata-rata Nilai Raport Kelas 12 : <br><br>
+				<input size="32" type="text" placeholder="Masukkan Rata-rata Nilai Raport" id="rata_raport" name="rata_raport">
+			</td>
+		</tr>
+	</table> 
+
+
+					<!--     Data Pilihan Program Studi     -->
+
+	<h2>Pilihan Program Studi</h2>
+	<table>
+		<tr>
+			<td>Pilih Program Studi 1 : <br><br>
+				<select id="Pilihan_Prog-1" name="Pilihan Prog-1">
+					<option>S1-Teknik Informatika</option>
+					<option>S1-Sistem Informasi</option>
+					<option>D3-Teknik Informatika</option>
+					<option>S1-DKV(Desain Komunikasi Visual)</option>
+					<option>S1-Ilmu Komunikasi</option>
+					<option>S1-Teknik Elektro</option>
+					<option>D3-Teknik Elektro</option>
+					<option>S2-Teknik Informatika</option>
+					<option>S2-Sistem Informasi</option>
+				</select>
+			</td>
+			<td>Pilih Program Studi 2 : <br><br>
+				<select id="Pilihan_Prog-2" name="Pilihan Prog-2">
+					<option>S1-Sistem Informasi</option>
+					<option>S1-Teknik Informatika</option>
+					<option>D3-Teknik Informatika</option>
+					<option>S1-DKV(Desain Komunikasi Visual)</option>
+					<option>S1-Ilmu Komunikasi</option>
+					<option>S1-Teknik Elektro</option>
+					<option>D3-Teknik Elektro</option>
+					<option>S2-Teknik Informatika</option>
+					<option>S2-Sistem Informasi</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+				<br>
+	      	Waktu Penginputan :
+	      	<input type="time" id="time" name="time">
+	
+	      	<input class="tombol" type="submit" value="Simpan" id="submit" name="submit">
+	        <input class="tombol" type="reset" value="Reset" id="reset" name="reset">
+	        <input class="tombol" type="button" value="kembali" id="kembali" name="kembali">
+</form>
+</div>
+</body>
+</html>

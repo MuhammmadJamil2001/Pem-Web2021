@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" contend="IE=edge">
+	<title>login-pass</title>
+
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(bg-pass.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+
+.login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 0, 0);
+	padding: 40px;
+	height: 300px;
+	width: 430px;
+	box-shadow: 0 0 10px 5px black;
+
+}
+
+.avatar {
+	font-size: 50px;
+	background: #bdc3c7;
+	line-height: center;
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, -50%);
+	border-radius: 50px;
+	color: maroon;
+}
+
+.login h2 {
+	text-align: center;
+	color: white;
+	padding-top: 10px;
+	letter-spacing: 5px;
+}
+
+.box-login {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+	border-bottom: 2px solid whote;
+	padding: 10px 0;
+}
+
+.box-login i {
+	font-size: 20px;
+	color: white;
+}
+
+.box-login input {
+	width: 100%;
+	padding: 0 10px;
+	background: none;
+	outline: none;
+	color: white;
+	font-size: white;
+}
+
+.box-login input::placholder {
+	color:  white;
+}
+
+.btn-login {
+	width:  100%;
+	background: none;
+	padding: 15px;
+	border:  1px solid white;
+	font-size: 18px;
+	letter-spacing: 5px;
+	color:  white;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.btn-login:hover  {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+
+}
+
+.battom a {
+	color:  white;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+
+</style>
+</head>
+
+<body>
+
+	<form action="php-4.php" method="Post" name="fcontoh">
+		<div class="login">
+			<div class="avatar">
+				<i class="fa fa-user"></i>
+			</div>
+
+			<h2>Login Form</h2>
+
+			<div class="box-login">
+				<i class="fas fa-envelope"></i>
+				<input type="email" placeholder="Masukkan E-mail" id="E-mail" name="E-mail">
+			</div>
+
+			<div class="box-login">
+				<i class="fas fa-envelope"></i>
+				<input type="password" placeholder="Masukkan Password" id="Password" name="Password">
+			</div>
+
+			<button href="https://kulino.dinus.ac.id/my/" type="submit" class="btn-login" id="Login" name="Login" value="Login">
+				Login
+			</button>
+			<div class="bottom">
+				<a href="https://kulino.dinus.ac.id/my/">Registe</a>
+				<a href="https://kulino.dinus.ac.id/my/">Forget Password</a>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
