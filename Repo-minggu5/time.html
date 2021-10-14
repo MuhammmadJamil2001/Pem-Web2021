@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>time.html</title>
+<style>
+h1 {
+	padding: 30px;
+	background-color: rosybrown;
+}
+
+.materi {
+	padding: 10px 24px;
+	background-color: darkblue;
+	font-size: 15px;
+	border-color: grey;
+	color: white;
+	float: right;
+	margin: 5px;
+}
+
+</style>
+</head>
+
+	<article>
+		<h1>Waktu di HTML
+			<p class="materi">Contoh time.html</p></h1>
+
+		<p>
+			Ditulis pada <time datetime="2021-10-14"> 14 Oktober 2021.</time>
+		</p>
+		<p>
+			Untuk Deadline pengerjaan Tugas pert-5 pada Tanggal 14 Oktober 2021 pukul<time> 23.55 WIB.</time>
+		</p>
+	</article>
+<body>
+		<p>Hari peringatan Maulid Nabi Muhammad SAW tahun ini sebenarnya jatuh pada tanggal 19 Oktober 2021, yang merupakan hari Selasa. Namun pemerintah sudah menggeser tanggal merah Maulid Nabi 2021 menjadi <time datetime="2021-20-14"> 20 Oktober 2021</time> pada hari Rabu. </p><br>
+
+	<button onclick="myFunction()">Berikut Alasannya</button>
+
+<script>
+function myFunction() {
+  	var x = document.createElement("TIME");
+  	x.setAttribute("datetime", "2021-10-20");
+  	var t = document.createTextNode("Dirjen Bimas Islam Kamaruddin Amin menyampaikan alasan pemerintah merevisi tanggal merah Maulid Nabi 2021 sebagai bentuk antisipasi terhadap munculnya kasus baru COVID-19. Meski tanggal peringatannya digeser, Kamaruddin menyebutkan tidak ada perubahan terhadap peringatan Maulid Nabi Muhammad SAW.");
+  	x.appendChild(t);
+  	document.body.appendChild(x);
+}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wart-Mhasko</title>
+    
+
+<style>
+
+body
+{
+    background-color: gainsboro;
+}
+ 
+main
+{
+    max-width: 1080px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 15px;
+    overflow: hidden;
+}
+ 
+header
+{
+    background-color: crimson;
+    color: white;
+    padding: 20px;
+}
+ 
+header h2
+{
+    margin-bottom: 7px;
+    font-size: 35px;
+}
+ 
+.navigasi ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:darkorange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+ 
+.navigasi li 
+{
+    float: left;
+}
+ 
+.navigasi li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+ 
+.navigasi li a:hover 
+{
+    background-color:red;
+    transition-duration: 2s;
+}
+ 
+.banner
+{
+    margin-bottom: 15px;
+}
+ 
+.banner img
+{
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+ 
+section
+{
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+section h3
+{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 13px;
+}
+ 
+section img
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+ 
+section p
+{
+    margin-bottom: 10px;
+}
+
+.menu-kiri
+{
+    width: 250px;
+    margin-right: 10px;
+    float: left;
+}
+ 
+.menu-tengah
+{
+    width: 530px;
+    margin-right: 10px;
+    float: left;
+}
+ 
+.menu-tengah h2
+{
+    background: none;
+    color: crimson;
+    margin-bottom: 0;
+    text-align: center;
+}
+ 
+.tanggal-posting
+{
+    color: gray;
+    text-align: right;
+    font-size: 12px;
+    padding-top: 8px;
+    margin-bottom: 10px;
+    display: block;
+}
+ 
+.tombol
+{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    width: 120px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+ 
+.tombol:hover
+{
+    background-color: black;
+    transition-duration: 2s;
+}
+ 
+.tombol-pesan
+{
+    background-color: green;
+}
+ 
+.tombol-lengkap
+{
+    background-color: darkorange;
+}
+ 
+.menu-kanan
+{
+    width: 250px;
+    float: left;
+}
+ 
+.menu-kanan, .menu-kiri, .menu-tengah
+{
+    margin-bottom: 15px;
+}
+
+.makanan_khas
+{
+    background-color: green;
+}
+.giveaway
+{
+    padding: 40px;
+    text-align: right;
+}
+.harga 
+{
+    background-color: yellow;
+    padding-top: 0px;
+    padding-bottom: 0px ;
+}
+
+.jadwal {text-align: center;}
+
+
+footer
+{
+    clear: both;
+    background-color: crimson;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+ 
+.menu-artikel ul
+{
+    list-style-type: none;
+}
+ 
+.menu-artikel ul li a
+{
+    text-decoration: none;
+    display: block;
+    padding: 13px;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 12px;
+    color: black;
+}
+ 
+.menu-artikel ul li a:hover
+{
+    color: darkorange;
+    border-bottom: 5px double chocolate;
+    transition-duration: 2s;
+}
+ 
+ 
+/*untuk tablet*/
+@media screen and (max-width:1080px)
+{
+    .badan-utama
+    {
+        width: 100%;
+    }
+ 
+    .menu-kiri
+    {
+        width: 25%;
+    }
+ 
+    .menu-tengah
+    {
+        width: 68%;
+        float: right;
+    }
+ 
+    .menu-kanan
+    {
+        clear: both;
+        float: none;
+        width: 100%;
+    }
+}
+ 
+/*untuk android*/
+@media screen and (max-width:780px)
+{
+    header h2, header p
+    {
+        text-align: center;
+    }
+ 
+    .menu-kiri, .menu-kanan, .menu-tengah
+    {
+        float: none;
+        width: 100%;
+    }
+ 
+    .navigasi li
+    {
+        float: none;
+    }
+}
+
+</style>
+</head>
+
+<body>
+     
+    <main>
+        <header>
+            <h2>Wart-Mhasko</h2>
+            <p>Warteg Online Makanan Khas Kotawaringin</p>
+        </header>
+ 
+        <nav class="navigasi">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#berita">Menu</a></li>
+                <li><a href="#kontak">About</a></li>
+                <li><a href="#tentang">Store</a></li>
+            </ul>
+        </nav>
+ 
+        <div class="banner">
+            <img src="poto-keropok/k-bata1.jpg" alt="Kerupuk Basah">
+        </div>
+ 
+        <article class="menu-kiri">
+            <section>
+                <h3>Pemesanan</h3>
+                <p>
+                    <b><i>Isi Form Pemesanan dengan Klik Tombol di bawah ini</i></b>
+                </p>
+ 
+                <a class="tombol tombol-pesan" href="#">Pesan</a>
+            </section>
+
+            <section>
+                <h3>Hallo kurir</h3>
+                <img src="poto-keropok/k-bata4.jpg" alt="Hallo Kurir">
+                <sub>Yuk di Hallo Kurir Aja</sub>
+            </section>
+
+            <section class="bahan">
+                <h3>Komposisi kerupuk Basah</h3>
+                <p>Bahan-Bahan :</p>
+                <ul>
+                    <li>1 Kg Daging ikan Arwan/ikan Belida segar</li>
+                    <li>500 gr Tepung sagu/kanji putih</li>
+                    <li>6 Siung bawang putih ditumbuk halus</li>
+                    <li>½ Sdk mkn merica bubuk</li>
+                    <li>3-4 Gelas air</li>
+                    <li>Garam secukupnya</li>
+                    <li>Vetsin/penyedap rasa secukupnya</li>
+                </ul>
+            </section>
+
+            <section class="harga">
+                <h4>Untuk Macam-macam Varian Beserta Harga :</h4>
+                <ul>
+                    <li>Kerupuk Basah Sambal Goreng<br>
+                        $ --> Harga : <b>20k</b></li>
+                    <li>Kerupuk Basah Goreng <br>
+                        $ --> Harga : <b>15k</b></li>
+                    <li>Kerupuk Basah Kukus <br>
+                        $ --> Harga : <b>13k</b></li>
+                    <li>Kerupuk Basah Lonjor Kukus <br>
+                        $ --> Harga : <b>10k</b></li>
+                    <li>Kerupuk Basah Frozen <br>
+                        $ --> Harga : <b>60k</b></li>
+                </ul>
+            </section>
+        </article>
+
+        <article class="menu-tengah"> 
+            <section>
+                <h2>kerupuk basah Sambal Raja</h2>
+                <span class="tanggal-posting">
+                    Diposting pada 11.04 WIB, 12 Oktober 2021
+                </span>
+ 
+                <img src="poto-keropok/k-bata2.jpg" alt="Kerupuk Basah">
+ 
+                <p>
+                    Kerupuk Basah adalah makanan khas Kotawaringin Lama. Kerupuk basah itu adalah calon kerupuk <i>(kerupuk kering yang biasanya dijual)</i> yang belum diiris dan dikeringkan sehingga orang-orang menyebutnya Kerupuk Basah. Nah disini kami menyediakan berbagai olahan kerupuk basah yang belum dikeringkan, dengan berbagai varian baik yang dikukus, digoreng maupun yang dibekukan <i>(Frozen)</i>.
+                </p>
+ 
+                <a class="tombol tombol-lengkap" href="#">Selengkapnya</a>
+            </section>
+
+            <section class="giveaway">
+                <img src="poto-keropok/k-bata5.jpg" alt="Keropok Bata">
+                    <p>Buruan!!! Cek IG nya <sub><a href="https://instagram.com/kerupukbasah_sambalraja"> @kerupukbasah_sambalraja</a></sub>
+                    </p>
+            </section>
+        </article>
+ 
+        <article class="menu-kanan"> 
+            <section class="jadwal">
+                <h3>Jadwal Buka</h3>
+                <img src="poto-keropok/k-bata3.jpg" alt="Kerupuk Basah">
+                    <h4>Jadwal Buka</h4>
+                    <p>Senin-Minggu 08.00 WIB - 22.00 WIB</p>
+            </section>
+ 
+ 
+            <section>
+                <h3 class="makanan_khas">Makanan Khas lainnya</h3>
+                <nav class="menu-artikel">
+                    <ul>
+                        <li><a href="#">Lomang</a></li>
+                        <li><a href="#">Coto Manggala</a></li>
+                        <li><a href="#">Wadai Bingka</a></li>
+                        <li><a href="#">Gangan Ancau</a></li>
+                        <li><a href="#">Gangan Asam</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section>
+                <details>
+                    <summary>Deskripsi Produk</summary>
+                    <p>𝙎𝙐𝘿𝘼𝙃 + 𝙎𝘼𝙈𝘽𝘼𝙇 Untuk setiap Kemasan </p>
+                        <br>
+                        <br># Kerupuk basah ikan khas sukamara.<br>
+                        <br># Terbuat dari ikan dan di jamin halal 100 % <br>
+                        <br># Di jamin nagih dan ngak bakal nyesel deh belinya. <br>
+                </details>
+            </section>
+        </article>
+ 
+        <footer>
+            Copyright &copy; 2021 || by @Muhammad Jamil
+        </footer>
+ 
+    </main>
+ 
+</body>
+</html>
