@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initialscale=
+	1.0">
+	<title>Personal Website</title>
+
+	<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="image/favicon.ico" type="x-icon">
+
+<style>
+.navigasi ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url(image/bg-bintik.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+ 
+.navigasi li 
+{
+    float: left;
+}
+ 
+.navigasi li a 
+{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+ 
+.navigasi li a:hover 
+{
+    background-color: #ff9900;
+    transition-duration: 1s;
+}
+body {
+	background-color:  #99e699;
+}
+
+</style>
+
+
+</head>
+
+<body>
+	<nav class="navigasi">	
+		<ul>
+            <li><a class="active" href="index.html">Home</a></li>
+			<li><a href="cv-jamil.pdf">Download CV</a></li>
+			<li><a href="kontak.html">Contact</a></li>
+			<li><a href="tentang.html">About me</a></li>
+        </ul>
+	</nav>
+	<hr />
+
+	<div>
+		<h1>Kontak Saya </h1>
+		<form>
+			<label for="email">Email</label><br />
+			<input style="padding-right: 150px;" type="email" name="email" placeholder="Masukkan alamat email"/>
+			<br />
+
+			<label for="message">Pesan</label><br />
+			<textarea name="message" placeholder="Tulislah pesan anda..."
+			rows="4" cols="80"></textarea>
+			<br />
+			<br />
+			<input type="submit" value="Kirim" />
+		</form>
+	</div>
+
+	<hr />
+	<footer style="text-align: center;">
+		<p>Copyright &copy; 2020 Muhammad Jamil.</p>
+	</footer>
+</body>
+</html>
