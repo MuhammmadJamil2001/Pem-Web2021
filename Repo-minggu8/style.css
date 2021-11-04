@@ -1,0 +1,33 @@
+p {
+	font-family: initial;
+}
+i {
+	font-family: sans;
+	color: #ff33cc;
+	font-size: 20px;
+}
+
+h1 {
+	padding: 30px;
+	background-color:  #66ff66;
+}
+
+h2 {
+	font-family: sans;
+	color: #9900cc;
+}
+
+b {
+	font-size: 25px;
+	color: maroon;
+}
+
+.materi {
+	padding: 10px 24px;
+	background-color: darkblue;
+	font-size: 15px;
+	border-color: grey;
+	color: white;
+	float: right;
+	margin: 5px;
+}
