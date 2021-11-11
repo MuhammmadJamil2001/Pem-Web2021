@@ -1,0 +1,46 @@
+p { 
+    font-size: 18px;
+}
+h1 {
+    color: #fff;
+    padding: 30px;
+    background-color: maroon;
+}
+.materi {
+    padding: 10px 24px;
+    background-color: darkblue;
+    font-size: 15px;
+    border-color: grey;
+    color: white;
+    float: right;
+    margin: 5px;
+}
+body{
+	background: #35A9DB;
+	font-family: roboto;
+	text-align: center;
+}
+div{
+	margin: 10px;
+}
+.kotak{
+	background: #fff;
+	width: 100px;
+	height: 100px;
+	transition: width 1s;
+	-webkit-transition: width 1s;
+}
+.kotak:hover{
+	width: 300px;
+}
+.kotak2{
+	background: #fff;
+	width: 100px;
+	height: 100px;
+	transition: width 1s, height 2s;
+	-webkit-transition: width 1s, height 2s;
+}
+.kotak2:hover{
+	width: 300px;
+	height: 300px;
+}

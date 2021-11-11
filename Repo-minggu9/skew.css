@@ -1,0 +1,84 @@
+p { 
+    font-size: 18px;
+}
+h1 {
+    color: #fff;
+    padding: 30px;
+    background-color: maroon;
+}
+h2 {
+    color: #fff;
+}
+.materi {
+    padding: 10px 24px;
+    background-color: darkblue;
+    font-size: 15px;
+    border-color: grey;
+    color: white;
+    float: right;
+    margin: 5px;
+}
+body{
+    background: #cc66ffB;
+    font-family: roboto;
+    text-align: center;
+}
+h2{
+    color: #fff;
+}
+.ketengah{
+    margin: 10px auto;
+    width: 1150px;
+}
+.kotak1{
+    background: #fcfcfc;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+}
+.kotak2{
+    background: #fcfcfc;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: skew(20deg); /* Support IE 9 */
+     -webkit-transform: skew(20deg); /* support Safari */
+     transform: skew(20deg); /* Standard syntax */
+}
+.kotak3{
+    background: #fcfcfc;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: skew(30deg,20deg); /* Support IE 9 */
+     -webkit-transform: skew(30deg,20deg); /* support Safari */
+     transform: skew(30deg,20deg); /* Standard syntax */
+}
+.kotak4{
+    background: #fcfcfc;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: skewY(20deg); /* Support IE 9 */
+     -webkit-transform: skewY(20deg); /* support Safari */
+     transform: skewY(20deg); /* Standard syntax */
+}
+.kotak5{
+    background: #fcfcfc;
+    padding: 20px;
+    float: left;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    -ms-transform: skewX(20deg); /* Support IE 9 */
+     -webkit-transform: skewX(20deg); /* support Safari */
+     transform: skewX(20deg); /* Standard syntax */
+}
