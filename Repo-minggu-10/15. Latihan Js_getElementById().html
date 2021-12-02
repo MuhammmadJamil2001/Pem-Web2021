@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h2 style="padding: 10px; color: darkorange;">Hi... introduce me Jamil.. here are some bios from me</h2>
+
+	<h2 style="padding: 10px; color: green;">What Can JavaScript Do?</h2>
+
+	<p>JavaScript dapat mengubah nilai atribut HTML.</p>
+
+	<p>Dalam hal ini JavaScript mengubah nilai atribut src (sumber) dari sebuah gambar.</p>
+
+	<button onclick="document.getElementById('myImage').src='foto/on.jpg'">Turn on the light</button>
+
+	<img id="myImage" src="foto/off.jpg" style="width:100px">
+
+	<button onclick="document.getElementById('myImage').src='foto/off.jpg'">Turn off the light</button> <br><br><br>
+
+
+	<!--Contoh yang menggunakan Tanda petik 2 (" ") -->
+
+	<p id="demo"><b>JavaScript can change HTML content...</b></p>
+	<button type="button" onclick='document.getElementById("demo").style.fontSize= "35px"'>Click maka text akan membesar</button>
+
+	<p id="F_Name">What is Jamil's full name?</p>
+	<button type="button" onclick='document.getElementById("F_Name").innerHTML = ">>>>>>>>>>>>>> Muhammad Jamil"'.>Click Me!</button>
+
+	<p id="HBD">When is Jamil's birthday?</p>
+	<button type="button" onclick='document.getElementById("HBD").innerHTML = ">>>>>>>>>>>>>> 15 November 2001"'>Click Me!</button>
+
+	<!--Contoh yang menggunakan Tanda petik 1 (' ') -->
+
+	<p id="Jurusan">What major is he?</p>
+	<button type="button" onclick="document.getElementById('Jurusan').innerHTML = '>>>>>>>>>>>>>> Teknik Informatika '">Click Me!</button>
+
+	<p id="live">Where does he live?</p>
+	<button type="button" onclick="document.getElementById('live').innerHTML = '>>>>>>>>>>>>>> Kotawaringin Lama'">Click Me!</button> <br><br>
+
+	<h3>Menyembunyikan elemen HTML dapat dilakukan dengan mengubah displaygaya: </h3>
+	<p>Nama Ibu Saya : <mark id="hilang"> SUMARNI </mark></p>
+		<button type="button" onclick="document.getElementById('hilang').style.display='none'">Click!!</button>
+
+	<h2>Kunci Jawaban </h2>
+
+		<p>Apa itu javascript? </p>
+		<p><i>Click Untuk melihat jawaban</i></p>
+
+		<p id="soal" style="display:none">
+		
+		<b>Javascript </b> adalah bahasa pemrograman yang pada tahap awal dirancang untuk berjalan di atas browser. Seiring perkembangan, javascript tidak hanya berjalan di atas browser saja (Client Side). Javascript juga dapat digunakan pada sisi Server, Game, IoT, Desktop, dan lain sebagainya. 
+		<br><br>
+		<b>Javascript</b> pada awalnya bernama Mocha, lalu berubah menjadi LiveScript saat browser Netscape Navigator 2.0 rilis versi beta (September 1995). Namun, setelah itu dinamai ulang menjadi Javascript. Terinspirasi dari kesuksesan Javascript, Microsoft mengadopsi teknologi serupa. Microsoft membuat ‘Javascript’ versi sendiri bernama Jscript dan di tanam pada Internet Explorer 3.0, ini mengakibatkan ‘Perang Browser’, karena JScript milik Microsoft berbeda dengan Javascript racikan Netscape. Akhirnya pada tahun International. Sehingga lahirlah standarisasi kode Javascript bernama ECMAScript atau ES. Saat ini ECMAScript sudah mencapai versi 8 (ES8).</p>
+
+	<button type="button" onclick="document.getElementById('soal').style.display='block'"> Click!!!</button>
+	
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Operator Bitwise</title>
+</head>
+<body>
+    <h1 style="background-color: silver;"> Praktikum-13 { OP-Britwise }</h1>
+
+    <script>
+        var x = 100;
+        var y = 50;
+
+        // operator bitwise and
+        var hasil = x & y;
+        document.write(`1. ${x} & ${y} = ${hasil}<br/>`);
+
+        // operator bitwise or
+        var hasil = x | y;
+        document.write(`2. ${x} | ${y} = ${hasil}<br/>`);
+
+        // operator bitwise xor
+        var hasil = x ^ y;
+        document.write(`3. ${x} ^ ${y} = ${hasil}<br/>`);
+
+        // operator negasi
+        var hasil = ~x;
+        document.write(`4. ~${x} = ${hasil}<br/>`);
+
+        // operator bitwise right shift >>
+        var hasil = x >> y;
+        document.write(`5. ${x} >> ${y} = ${hasil}<br/>`);
+
+        // operator bitwise right shift <<
+        var hasil = x << y;
+        document.write(`6. ${x} << ${y} = ${hasil}<br/>`);
+         
+        // operator bitwise right shift (unsigned) >>>
+        var hasil = x >>> y;
+        document.write(`7. ${x} >>> ${y} = ${hasil}<br/>`);
+    </script>
+</body>
+</html>
