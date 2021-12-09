@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Perulangan Foreach</title>
+</head>
+<body>
+    <script>
+    document.write("Perulangan foreach dari indeks 2 <br>")
+    var languages = ["Javascript", "HTML", "CSS", "Typescript"];
+
+    for(i = 2; i < languages.length; i++){
+        document.write(i+". "+ languages[i] + "<br/>");
+    }
+
+    document.write("<br>Dan berikut penyederhanaan dengan operator in<br>")
+    var languages = ["Javascript", "HTML", "CSS", "Typescript"];
+    for(i in languages){
+        document.write(i+". "+ languages[i] + "<br/>");
+    }
+
+    </script>
+</body>
+</html>

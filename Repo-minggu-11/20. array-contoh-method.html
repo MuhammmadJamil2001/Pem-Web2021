@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contoh method-method array</title>
+</head>
+<body>
+    <h1>Array JavaScript { Contoh method-method array }</h1>
+    <h2>Method filter() : Menyaring data dari array</h2>
+
+    <p>1. [32, 33, -17, 16, 40, -4] <br>Dari Data di atas manakah yang memiliki nilai > dari 18</p>
+    <i>Jawaban :</i>
+    <p id="demo"></p>
+    <script>
+        const ages = [32, 33, -17, 16, 40, -4];
+        document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+        function checkAdult(age) {
+            return age > 18;
+        }
+
+        // Method filter
+        const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        // ambil data yang hanya habis dibagi dua
+        const filteredArray = angka.filter(item => item % 2 === 0);
+        console.log(filteredArray); // -> [2, 4, 6, 8] 
+        document.write("<b>Pengambilan data yang hanya habis dibagi dua = </b>" + filteredArray);
+    </script>
+        <h2>Method includes() : Mengecek apakah data ada dalam array</h2>
+
+        <p>2. Tanaman = ["Padi", "Kacang", "Jagung", "Kedelai"]; <br></p>
+        <i>Jawaban :<br></i>
+    <script>
+        // Method Includes
+        var tanaman = ["Padi", "Kacang", "Jagung", "Kedelai"];
+
+        // apakah kacang sudah ada di dalam array tanaman?
+        var adaKacang = tanaman.includes("Kacang");
+        console.log(adaKacang); // -> true
+        document.write("a. Apakah kacang sudah ada di dalam array tanaman? <br>" + " = " + adaKacang);
+
+        //apakah bayam ada?
+        var adaBayam = tanaman.includes("Bayam");
+        console.log(adaBayam); // -> false
+        document.write("<br>b. pakah bayam ada? <br>" + " = " +adaBayam); 
+    </script>
+        <h2>Method short() : Mengurutkan data array</h2>
+
+        <p>3. var alfabet = ['a','f','z','e','r','g']; <br>var angka = [3,1,2,6,8,5]; <br> Urutkan Abjad & Huruf berikut :</p>
+        <i>Jawaban :<br></i>
+    <script>
+        //Method Short
+        var alfabet = ['a','f','z','e','r','g'];
+        var angka_2 = [3,1,2,6,8,5];
+            console.log(alfabet.sort()); //-> ["a", "e", "f", "g", "r", "z"]
+            document.write("<br> ---> Abjad Terurut: " + alfabet);
+            console.log(angka_2.sort()); // -> [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            document.write("<br> ---> Angka Terurut : " + angka_2);
+        
+    </script>
+</body>
+</html>
