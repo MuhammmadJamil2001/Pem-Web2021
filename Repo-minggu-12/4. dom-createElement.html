@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM API Javascript</title>
+</head>
+<body>
+
+<h1 style="color:pink;">Membuat Elemen dengan DOM API </h1>
+
+    <script>
+        // membuat element h1
+        var judul = document.createElement("h1");
+        var footer = document.createElement("footer");
+
+        // mengisi kontent elemen
+        judul.textContent = "Belajar Javascript";
+        footer.textContent = "Copyright &copy; 2021 || by @Muhammad Jamil";
+
+        // menambahkan elemen ke dalam tag body
+        document.body.append(judul);
+        document.body.append(footer);
+
+        // memberikan CSS ke elemen
+        footer.style.backgroundColor = "yellow";
+    </script>
+</body>
+</html>

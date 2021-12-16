@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan pert-12</title>
+</head>
+
+<body>
+
+<h2>Objek dan Array JavaScript Bersarang.</h2>
+<p id="demo"></p>
+
+<script>
+let x = "";
+const myObj = {
+  name: "Jamil",
+  age: 21,
+  cars: [
+    {name:"IPhone ", models:["12 Pro", "13 Pro MAX", "13 Pro"]},
+    {name:"Kapasitas Memori", models:["256Gb", "512Gb", "128Gb"]},
+    {name:"Harga", models:["Rp. 17.699.000,00", "Rp. 23.588.000,00", "Rp. 22.400.000,00" ]}
+  ]
+}
+
+for (let i in myObj.cars) {
+  x += "<h2>" + myObj.cars[i].name + "</h2>";
+  for (let j in myObj.cars[i].models) {
+    x += myObj.cars[i].models[j] + "<br>";
+  }
+}
+
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>

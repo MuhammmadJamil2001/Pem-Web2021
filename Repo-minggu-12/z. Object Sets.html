@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan pert-12</title>
+</head>
+
+<body>
+<h2>Contoh JavaScript Sets</h2>
+<p># entri () Mengembalikan Iterator dengan pasangan [nilai, nilai] dari Set:</p>
+
+<p id="demo"></p>
+
+<!--<script>
+// Create a Set
+  const letters = new Set();
+
+  // Add values to the Set
+  letters.add("a");
+  letters.add("b");
+  letters.add("c");
+  letters.add("c");
+  letters.add("c");
+  letters.add("c");
+  letters.add("c");
+  letters.add("c");
+
+  // Display set.size
+  document.getElementById("demo").innerHTML = letters.size;
+</script> -->
+
+<script>
+// Create a Set
+const letters = new Set(["a","b","c"]);
+
+// List all entries
+const iterator = letters.entries();
+let text = "";
+for (const entry of iterator) {
+  text += entry + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

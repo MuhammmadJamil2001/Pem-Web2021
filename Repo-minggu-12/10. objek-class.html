@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Objek Javascript</title>
+
+<script type="text/javascript">
+    /* var person = {
+        firstName: "Agus",
+        lastName: "Santoro",
+        showName: function(){
+        alert(`Nama: ${this.firstName} ${this.lastName}`);
+        }
+    };
+    var person2 = {
+        firstName: "Belajar",
+        lastName: "Kode",
+        showName: function(){
+        alert(`Nama: ${this.firstName} ${this.lastName}`);
+        }
+    }; */
+</script> 
+</head>
+
+<body>
+    <h1>Membuat Class Objek dengan this</h1>
+
+    <script>
+        function Person(firstName, lastName){
+            // properti
+            this.firstName = firstName;
+            this.lastName = lastName;
+
+            // method
+            this.fullName = function(){
+            return (` - ${this.firstName} ${this.lastName}`)
+            }
+            this.showName = function(){
+            document.write(this.fullName());
+            }
+        }
+        var person1 = new Person("MUHAMMAD", "JAMIL");
+        var person2 = new Person("A11.2020.12567", "/ 4302");
+
+        person1.showName();
+        document.write("<br>");
+        person2.showName(); 
+        document.write("<br><br> Tugas telah dilaksanakan laporan Selesai.")
+    </script>
+</body>
+</html>

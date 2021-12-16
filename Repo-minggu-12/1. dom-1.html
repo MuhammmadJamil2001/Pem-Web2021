@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Memilih Elemen Berdasarkan ID</title>
+</head>
+<body>
+
+<h1 style="color:maroon;">Mengakses Element tertentu dengan DOM-1</h1>
+
+<!-- Elemen div yang akan dipilih dari JS -->
+<div id="tutorial"></div>
+<div id="fungsi"></div>
+
+    <script type="text/javascript">
+
+        // mengakses elemen tutorial
+        var tutorial = document.getElementById("tutorial");
+        var fungsi = document.getElementById("fungsi");
+
+        // mengisi teks ke dalam elemen
+        tutorial.innerText = "Tutorial Javascript";
+        fungsi.innerText = "DOM merupakan singkatan dari Document Object Model, artinya, dokumen (HTML) yang dimodelkan dalam sebuah objek. Objek dari dokumen ini menyediakan sekumpulan fungsi dan atribut/data yang bisa dimanfaatkan dalam membuat program Javascript. Inilah yang disebut API (Application Programming Interface). DOM tidak hanya untuk dokumen HTML saja. DOM juga bisa digunakan untuk dokumen XML dan SVG, dan DOM juga tidak hanya ada di Javascript saja, DOM juga ada pada bahasa pemrograman lain";
+
+        // memberikan CSS ke elemen
+        tutorial.style.backgroundColor = "green";
+        fungsi.style.backgroundColor = "yellow";
+        tutorial.style.padding = "10px";
+        fungsi.style.padding = "20px";
+        tutorial.style.color = "white";
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan pert-12</title>
+</head>
+
+<body>
+  <h2>Latihan JavaScript Objects</h2>
+  <p>JavaScript objects are mutable.</p>
+  <p>Setiap perubahan pada salinan objek juga akan mengubah objek aslinya:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName: "MUHAMMAD",
+  lastName: "JAMIL",
+  age:21,
+  eyeColor: "blue"
+};
+
+const x = person;
+x.age = 10;
+
+document.getElementById("demo").innerHTML =
+person.firstName + " Usia saya adalah " + person.age + " Tahun.";
+</script>
+
+<script>
+  /*const person = {};
+  person.firstName = "John";
+  person.lastName = "Doe";
+  person.age = 50;
+  person.eyeColor = "blue"; 
+
+  document.getElementById("demo").innerHTML =
+  person.firstName + " is " + person.age + " years old."; */
+</script> 
+
+</body>
+</html>

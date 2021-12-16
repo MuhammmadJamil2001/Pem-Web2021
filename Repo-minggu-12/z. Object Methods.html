@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan pert-12</title>
+</head>
+
+<body>
+
+<h2>JavaScript Objects</h2>
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName: "Muhammad",
+  lastName: "Idris",
+  id: 558795,
+};
+person.name = function() {
+  return (this.firstName + " " + this.lastName).toUpperCase();
+};
+
+document.getElementById("demo").innerHTML =
+"Nama Ayah saya adalah : " + person.name(); 
+</script>
+
+</body>
+</html>

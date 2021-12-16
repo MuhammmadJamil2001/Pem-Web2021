@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM API Javascript {DOM-3}</title>
+</head>
+
+<body>
+
+<h1 style="color:brown;">Mengakses Element tertentu dengan DOM-3</h1>
+
+    <p class="paragraf"><b>
+        Jelaskan dengan bahasa sendiri Mengenai DOM Javascript, dan bagaimana model implementasinya ! </b>
+    </p>
+    <p class="paragraf">
+        <i>Jawab : </i><br>
+        <b>DOM</b> atau <b>Document Object Model</b> adalah sebuah pemodelan dari dokumen html kedalam bentuk object yang dapat di manipulasi oleh javascript. Dom menjadi jembatan penghubung antara javascript dengan html. Oleh karena itu DOM bisa di sebut sebagai API (Application Programming Interface) karena memiliki fungsi sebagai perantara antara bahasa pemrogramman javascript dengan html. Ketika kita ingin memanipulasi sebuah element, seperti mengubah konten, mengubah struktur, mengubah style dan lain sebagainya, maka kita hanya perlu memanfaatkan fungsi-fungsi yang sudah disediakan DOM dalam membuat kode javascriptnya.
+    </p>
+    <p class="paragraf">
+        <b>Bagaimana Implementasinya ? :</b><br> 
+
+        Untuk menggunakan dom pada javascript kita bisa menggunakan memanggil fungsi document , Fungsi ini berisi representasi dokumen html yang belum di modifikasi oleh javascript. Objek ini berisi segala hal yang kita butuhkan untuk memanipulasi HTML. Jika kita coba ketik document pada console Javascript, maka yang akan tampil adalah kode HTML. Di dalam objek document, terdapat fungsi-fungsi dan atribut yang bisa kita gunakan untuk memanipulasi dokumen HTML. Sebagai contoh fungsi documen.write(). Fungsi ini digunakan untuk menulis sesuatu ke dokumen HTML. 
+    </p>
+
+    <script>
+        var paragraf = document.getElementsByClassName("paragraf");
+        setInterval(function () {
+            paragraf[0].style.color = "red";
+            paragraf[1].style.color = "green";
+            paragraf[2].style.color = "blue";
+
+        setTimeout(function () {
+            paragraf[0].style.color = "black";
+            paragraf[1].style.color = "purple";
+            paragraf[2].style.color = "white";
+
+    //rentang waktu (interval) 
+        }, 700)
+    }, 1200);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM API Javascript</title>
+</head>
+<body>
+    <h1>Aplikasi Ubah Warna</h1>
+    <label>Warna latar : </label>
+
+    <input type="color" id="bg-color" />
+    <br>
+    <label>Warna teks : </label>
+    <input type="color" id="text-color" />
+
+    <h3>Document Object Model </h3> 
+    <p>
+        Document Object Model (DOM) adalah sebuah antarmuka pemrograman (programing interface) untuk HTML, XML dan SVG yang bersifat lintas platform dan language-independent.[1] Sebuah peramban web tidak harus menggunakan DOM untuk menampilkan dokumen HTML. Namun DOM diperlukan oleh JavaScript yang akan mengubah tampilan sebuah situs web secara dinamis. Dengan kata lain, DOM adalah cara JavaScript melihat suatu halaman HTML. <br>
+        
+        W3C mulai mengembangkan DOM pada awal 1990-an. Pada bulan Oktober 1998, DOM 1 diluncurkan. Spesifikasi DOM W3C terbagi menjadi beberapa tingkat. Sebuah halaman yang mendukung suatu level harus menerapkan semua persyaratan level tersebut dan di bawahnya.<br>
+        
+        Sebelum ada standar DOM dari W3C, masing-masing peramban web memiliki DOM sendiri. Akibatnya, bila suatu situs web ingin ditampilkan secara cross-browser compatible, ia harus dirancang untuk setiap peramban web yang akan didukung. DOM standar mempermudah pengembangan aplikasi web.
+    </p>
+
+        <script>
+            var bgColor = document.getElementById('bg-color');
+            var txtColor = document.getElementById('text-color');
+            bgColor.addEventListener("change", (event) => {
+            document.body.style.backgroundColor = bgColor.value;
+            });
+            txtColor.addEventListener("change", (event) => {
+            document.body.style.color = txtColor.value;
+            });
+        </script>
+</body>
+</html>

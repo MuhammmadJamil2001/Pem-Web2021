@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM API Javascript {dom-remove}</title>
+
+</head>
+<body>
+
+<h1 style="color:orange;">Menghapus Elemen dengan DOM API</h1>
+
+<p>Cek Console untuk melihat bagian h1 yang di Remove</p>
+
+<h2 id="judul2">Delete Saya!</h2>
+<h3 id="name">Nama : Muhammad Jamil <br>NIM : A11.2020.12567 <br>Kelompok : 4302</h3>
+    <script>
+        // memilih elemen berdasarkan ID
+        var h2 = document.getElementById('judul2');
+        var h3 = document.getElementById('nama');
+
+        // menghapus elemen yang sudah dipilih
+        h2.remove();
+        console.log("Elemen sudah dihapus");
+        console.log(h2);
+        console.log(h3);
+    </script>
+</body>
+</html>

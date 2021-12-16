@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan pert-12</title>
+</head>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+Person.prototype.name = function() {
+  return this.firstName + " " + this.lastName + " " + this.age +" "+ this.eyeColor
+};
+
+const myMother = new Person("Sumar", "Marni", "<br>Usia : 60 thn", "<br>Warna Favorit : Ungu");
+document.getElementById("demo").innerHTML =
+"My Mother is : " + myMother.name(); 
+
+</script>
+
+</body>
+</html>
