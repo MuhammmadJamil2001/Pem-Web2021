@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Looping JavaScript Object Values</h2>
+<p id="demo"></p>
+
+<script>
+const myJSON = '{"name":"John", "age":30, "car":null}';
+const myObj = JSON.parse(myJSON);
+
+let text = "";
+for (const x in myObj) {
+  text += myObj[x] + ", ";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+
+<br><br><br>
+
+<body> 
+
+<h2>Make a table based on the value of a drop down menu.</h2>
+
+<select id="myselect" onchange="change_myselect(this.value)">
+  <option value="">Choose an option:</option>
+  <option value="customers">Customers</option>
+  <option value="products">Products</option>
+  <option value="suppliers">Suppliers</option>
+</select>
+
+<p id="demo"></p>
+
+<script>
+function change_myselect(sel) {
+  const dbParam = JSON.stringify({table:sel,limit:20});
+  const xmlhttp = new XMLHttpRequest();
+  xmlhttp.onload = function() {
+    myObj = JSON.parse(this.responseText);
+    text = "<table border='1'>"
+    for (x in myObj) {
+      text += "<tr><td>" + myObj[x].name + "</td></tr>";
+    }
+    text += "</table>"    
+    document.getElementById("demo").innerHTML = text;
+  }
+  xmlhttp.open("POST", "json_demo_html_table.php", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("x=" + dbParam);
+}
+</script>
+
+</body>
+
+<br><br><br>
+
+<body>
+
+<p>A script tag with a src attribute is created and placed in the document.</p>
+<p>The PHP file returns a call to a function with an object as a parameter.</p>
+<p id="demo"></p>
+
+<p>Try changing the table property from "customers" to "products".</p>
+
+<script>
+const obj = { table: "customers", limit: 10 };
+let s = document.createElement("script");
+s.src = "jsonp_demo_db.php?x=" + JSON.stringify(obj);
+document.body.appendChild(s);
+
+function myFunc(myObj) {
+  let txt = "";
+  for (let x in myObj) {
+    txt += myObj[x].name + "<br>";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+
+<br><br><br>
+
+<body>
+
+<h2>JSON.stringify() will remove any functions from an object.</h2>
+<p>Convert functions into strings to keep them in the JSON object.</p>
+
+<p id="demo"></p>
+
+<script>
+const obj = {name: "MUHAMMAD JAMIL", age: function () {return 30;}, city: "DUBAI"};
+obj.age = obj.age.toString();
+const myJSON = JSON.stringify(obj);
+document.getElementById("demo").innerHTML = myJSON;
+</script>
+
+</body>
+</html>
