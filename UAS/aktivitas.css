@@ -1,0 +1,127 @@
+body 
+{
+    background: url(UAS-poto/icons/wp4.webp); 
+    background-size: contain; 
+    background-attachment: fixed; 
+    margin: auto
+}
+
+.bungkus {
+    background-color: #ffffe6;
+    width:  1000px;
+    color:  black;
+    margin:  20px auto;
+    padding:  25px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.profil 
+{
+    text-shadow: 5px 5px 5px  grey;
+}
+
+.profil img
+{
+    width: 150px;
+    display: block; 
+    border-radius: 50%; 
+    margin-right: 40px;
+    border: 3px solid grey;
+
+}
+
+.navigasi ul 
+{
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: maroon;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+ 
+.navigasi li 
+{
+    float: left;
+}
+ 
+.navigasi li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+ 
+.navigasi li a:hover 
+{
+    background-color: darkorange;
+    transition-duration: 2s;
+}
+
+.nav-2 ul
+{
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    overflow: hidden;
+    background-color: maroon;
+    border-radius: 30px 30px 30px 30px;
+}
+.nav-2 li
+{
+    float: left;
+}
+.nav-2 li a 
+{
+    padding: 10px 65px; 
+    background-color: darkorange; 
+    font-size: 15px; 
+    margin: 30px 30px 30px 30px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 18px; 
+    color: black; 
+    font: bold;
+}
+.nav-2 li a:hover 
+{
+    background-color: white;
+    transition-duration: 2s;
+}
+
+.baju 
+{
+    background-color: #a6a6a6;
+    width:  950px;
+    padding:  25px;
+    margin: auto;
+}
+
+.penjual img
+{
+    display: block; 
+    width: 100px;
+    border-radius: 50%; 
+    margin-right: 20px;
+    border: 4px dashed black;
+}
+
+.poto-aktivitas
+{   
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 10px
+}
+
+.chet img
+{ 
+    width: 50px;
+    border-radius: 50%; 
+    margin-right: 10px;
+    border: 0px;
+}

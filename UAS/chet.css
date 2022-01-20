@@ -1,0 +1,82 @@
+body 
+{
+    background: url(UAS-poto/icons/wp5.jpg); 
+    background-size: contain; 
+    background-attachment: fixed; 
+    margin: auto
+}
+
+.bungkus {
+    background-color: #ffffe6;
+    width:  1000px;
+    margin:  20px auto;
+    padding:  25px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+tr, td{ 
+    border: px solid black;
+}
+
+.profil 
+{
+    text-shadow: 5px 5px 5px  grey;
+}
+
+input[type=text] {
+    width: 920px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('UAS-poto/Logo/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.chet img
+{ 
+    width: 50px;
+    border-radius: 50%; 
+    margin-right: 10px;
+}
+
+.status img
+{
+    display: block; 
+    width: 100px;
+    border-radius: 50%; 
+    margin-right: 30px;
+    border: 4px dashed black;
+}
+
+.tanggal
+{
+    margin-right: auto; 
+    text-align: right; 
+    padding: 10px;"
+}
+
+nomor
+{
+    background-color: maroon; 
+    color: white; 
+    padding: 12px; 
+    border-radius: 50%;
+}
+
+j
+{
+    font-size: 35px; 
+    font: bold;
+}
+
+.spasi
+{
+    margin-right: 220px;
+}
